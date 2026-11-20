@@ -1,0 +1,8 @@
+{
+  "name": "rumo-a-liberdade",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Jogo de plataforma Canvas sobre resistência coletiva e liberdade.",
+  "scripts": { "test": "node --test --test-isolation=none tests/*.test.js" }
+}

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101c2b">
+  <meta name="description" content="Uma aventura fictícia de resistência, solidariedade e liberdade. Jogo de plataforma em pixel art.">
+  <title>Rumo à Liberdade — uma história de resistência</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-shell" aria-label="Jogo Rumo à Liberdade">
+    <header class="masthead"><span class="brand">RUMO À LIBERDADE</span><span class="edition">UMA HISTÓRIA DE RESISTÊNCIA · 20 DE NOVEMBRO</span><button id="sound" type="button" aria-pressed="false">Som: desligado</button></header>
+    <section id="hud" class="hud" aria-label="Progresso da partida" hidden>
+      <div class="vital"><span class="hud-label">MALIK</span><span id="health" aria-label="Vida"></span></div>
+      <div class="mission"><span id="phase" class="hud-label"></span><span id="objective"></span></div>
+      <span id="party" class="party"></span>
+      <button id="pause" type="button" aria-label="Pausar jogo">Ⅱ</button>
+    </section>
+    <div class="viewport" id="viewport">
+      <canvas id="game" width="320" height="180" tabindex="0" aria-label="Área do jogo. Use teclado. Instruções disponíveis no menu."></canvas>
+      <div id="overlay" class="overlay"></div>
+      <div id="toast" class="toast" role="status" aria-live="polite"></div>
+      <div id="interaction" class="interaction"></div>
+    </div>
+    <footer class="controls"><span><kbd>A</kbd><kbd>D</kbd> / ← → mover</span><span><kbd>ESPAÇO</kbd> pular</span><span><kbd>J</kbd> afastar guardas</span><span><kbd>E</kbd> interagir</span><span><kbd>ESC</kbd> pausar</span></footer>
+    <p class="context">Uma narrativa fictícia sobre a força da resistência coletiva. Liberdade é um direito de todas as pessoas.</p>
+    <noscript>Ative o JavaScript para jogar. Todos os recursos do jogo são locais.</noscript>
+  </main>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
